@@ -1,0 +1,14 @@
+# CAVEAT: changing this file need to be approved by SRE team.
+
+include:
+  - project: 'SRE/ci-cd'
+    file: common.yml
+
+variables:
+  project: platform
+  application: biscotti
+
+bake:
+  only:
+    - master
+  extends: .bake
